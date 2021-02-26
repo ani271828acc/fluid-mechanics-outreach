@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Volume</title>
+    <link rel="stylesheet" href="frontpage.css">
+</head>
+<body>
+
+
+  <div class="topnav">
+    <a class="active" href="frontpage.html">Frontpage</a>
+    <a href="calculator.html">Solve</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Subtopics
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="viscosity.html">Viscosity</a>
+        <a href="surfaceTension.html">Surface Tension</a>
+        <a href="newtonianNonNewtonian.html">Newtonian/Non-Newtonian</a>
+        <a href="fluidStatics.html">Fluid Statics</a>
+        <a href="fluidDynamics.html">Fluid Dynamics</a>
+        <a href="controlVolume.html">Control Volume</a>
+        <a href="massCons.html">Mass Conservation</a>
+        <a href="momentumCons.html">Momentum Conservation</a>
+        <a href="Energycons.html">Energy Conservation</a>
+      </div>
+    </div> 
+  </div>
+  <br><br>
+  
+   
+
+
+    
+
+    <h1 class="box1" style="font-size: 300%;">Control Volume</h1>
+    <img src="maxresdefault.jpg" alt="error loading image" class="center">
+    <br>
+    <pre style="font-size: 200%;font-family: Verdana, Geneva, Tahoma, sans-serif;text-align: left;" class="box2">
+        There are two approaches in dealing with fluid mechanics problems:
+        <br>
+        1. Control Mass or System approach
+          - In this approach, we focus on a fixed mass of fluid particles.
+          - This approach is practically hard to apply and use.
+        2. Control Volume approach
+          - In this approach, we focus on a region of space enclosed by a 
+            <b>Control Surface</b> (CS).
+          - Conservation equations are written with respect to the volume
+            enclosed in the Control Surface.
+    </pre>
+
+    
+    <br>
+    <br>
+
+
+    <h2 class="box1" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 240%;text-align: center;">Reynold's Transport Theorem</h2>
+    <br>
+   <ul class="box1" style="font-size: 180%;padding: 40px;">
+       <li> Let B be any extensive property associated with the system.</li> <br>
+       <li> Reynold's transport theorem states that the net rate of change of B for the system is equal to the sum of time rate of change of B within the control volume and the rate of flux of B through the control surface. </li>
+       <br>
+       <li><img src="reynoldstransport.JPG" alt="error loading image" class="center"></li>
+       <br>
+       <li>B could be either mass or momentum or energy or concentration of a species dispersed in the fluid.</li>
+       <br>
+       <li>B=mass and B=momentum are commonly used.</li>
+       <br>
+       <li>
+        <img src="400px-Fluid_Dynamics_13.png" alt="error loading image" class="center"></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var u,A,v,y1,y2,F;
+
+
+
+u=Number(document.getElementById("u").value);
+A=Number(document.getElementById("A").value);
+v=Number(document.getElementById("v").value);
+y1=Number(document.getElementById("y1").value);
+y2=Number(document.getElementById("y2").value);
+
+F=(u*A*v)*((1/y1)+(1/y2));
+
+document.getElementById("answer").innerHTML= F;
+}
+</script>
+
+<link rel="stylesheet" href="frontpage.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="frontpage.html">Frontpage</a>
+        <a href="calculator.html">Solve</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Subtopics
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="viscosity.html">Viscosity</a>
+            <a href="surfaceTension.html">Surface Tension</a>
+            <a href="newtonianNonNewtonian.html">Newtonian/Non-Newtonian</a>
+            <a href="fluidStatics.html">Fluid Statics</a>
+            <a href="fluidDynamics.html">Fluid Dynamics</a>
+            <a href="controlVolume.html">Control Volume</a>
+            <a href="massCons.html">Mass Conservation</a>
+            <a href="momentumCons.html">Momentum Conservation</a>
+            <a href="Energycons.html">Energy Conservation</a>
+          </div>
+        </div> 
+      </div>
+      <br><br>
+      
+       
+
+
+
+    <h1 class="box1" style="font-size: 220%;">Viscous force on a plate</h1>
+
+<img src="plate.JPG" alt="error loading image" class="center" >
+<p class="box2"> 
+Enter density of fluid: <input id="u" class="box1"><br><br>
+Enter area of plate: <input id="A" class="box1"><br><br>
+Enter velocity of plate: <input id="v" class="box1"><br><br>
+Enter height from top: <input id="y1" class="box1"><br><br>
+Enter height from bottom: <input id="y2" class="box1"><br><br>
+
+<button onclick="add()" class="box1" style="font-size: 140%;background-color: black;color: white;">
+    SUBMIT</button><br><br><br>
+Viscous force on plate is: <ggg id="answer" class="box1"></ggg>
+
+<br>
+<br>
+<br>
+</p>
+</body>
+</html>

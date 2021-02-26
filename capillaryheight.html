@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var T,r,p,h,o,x;
+
+
+
+T=Number(document.getElementById("T").value);
+r=Number(document.getElementById("r").value);
+p=Number(document.getElementById("p").value);
+o=Number(document.getElementById("o").value);
+
+x=Math.cos(o)
+h=(T*x)/(5*r*p);
+
+
+document.getElementById("answer").innerHTML= h;
+}
+</script>
+
+<link rel="stylesheet" href="frontpage.css">
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="frontpage.html">Frontpage</a>
+        <a href="calculator.html">Solve</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Subtopics
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="viscosity.html">Viscosity</a>
+            <a href="surfaceTension.html">Surface Tension</a>
+            <a href="newtonianNonNewtonian.html">Newtonian/Non-Newtonian</a>
+            <a href="fluidStatics.html">Fluid Statics</a>
+            <a href="fluidDynamics.html">Fluid Dynamics</a>
+            <a href="controlVolume.html">Control Volume</a>
+            <a href="massCons.html">Mass Conservation</a>
+            <a href="momentumCons.html">Momentum Conservation</a>
+            <a href="Energycons.html">Energy Conservation</a>
+          </div>
+        </div> 
+      </div>
+      <br><br>
+      
+       
+    <h1 class="box1" style="font-size: 220%;">Rise of fluid in capillary</h1>
+
+<img src="capillary-rise.png" alt="error loading image" class="center" style="width: 320px;height: 350;">
+<p class="box2"> 
+Enter Surface Tension of liquid: <input id="T" class="box1"><br><br>
+Enter radius of capillary: <input id="r" class="box1"><br><br>
+Enter density of fluid: <input id="p" class="box1"><br><br>
+Enter contact angle in radians: <input id="o" class="box1"><br><br>
+
+
+<button onclick="add()" class="box1" style="font-size: 140%;background-color: black;color: white;">
+    SUBMIT</button><br><br><br>
+Rise of fluid in capillary is: <ggg id="answer" class="box1"></ggg>
+
+<br>
+<br>
+<br>
+</p>
+</body>
+</html>

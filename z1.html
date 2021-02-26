@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var T,r,p,h;
+
+
+
+T=Number(document.getElementById("T").value);
+r=Number(document.getElementById("r").value);
+p=Number(document.getElementById("p").value);
+
+h=T/(5*r*p);
+
+
+document.getElementById("answer").value= h;
+}
+</script>
+
+<link rel="stylesheet" href="frontpage.css">
+</head>
+<body class="box2">
+Enter T: <input id="T" class="box1"><br><br>
+Enter r: <input id="r" class="box1"><br><br>
+Enter p: <input id="p" class="box1"><br><br>
+
+
+
+<button onclick="add()" class="box1">SUBMIT</button><br>
+<input id="answer" class="box1">
+</body>
+</html>
