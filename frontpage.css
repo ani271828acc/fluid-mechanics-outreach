@@ -165,6 +165,7 @@ h1{
   
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
+   
   }
   
   .dropdown-content {
@@ -192,4 +193,21 @@ h1{
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  table, th, td{
+
+    background-color: #000000;
+    color: rgb(255, 208, 208);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkseagreen;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    
   }

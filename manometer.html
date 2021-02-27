@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var p,h1,h2,g,gp,p0;
+
+g=9.8;
+
+p=Number(document.getElementById("p").value);
+h1=Number(document.getElementById("h1").value);
+h2=Number(document.getElementById("h2").value);
+p0=Number(document.getElementById("p0").value);
+
+
+gp=p*g*(h2-h1)+p0;
+
+
+document.getElementById("answer").innerHTML= gp;
+}
+</script>
+
+<link rel="stylesheet" href="frontpage.css">
+ </head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="frontpage.html">Frontpage</a>
+        <a href="calculator.html">Solve</a>
+        <a href="about.html">About</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Subtopics
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="viscosity.html">Viscosity</a>
+            <a href="surfaceTension.html">Surface Tension</a>
+            <a href="newtonianNonNewtonian.html">Newtonian/Non-Newtonian</a>
+            <a href="fluidStatics.html">Fluid Statics</a>
+            <a href="fluidDynamics.html">Fluid Dynamics</a>
+            <a href="controlVolume.html">Control Volume</a>
+            <a href="massCons.html">Mass Conservation</a>
+            <a href="momentumCons.html">Momentum Conservation</a>
+            <a href="Energycons.html">Energy Conservation</a>
+            <a href="visualisation.html">Visualisation of Flow</a>
+          </div>
+        </div> 
+      </div>
+      <br><br>
+      
+       
+    
+      
+       
+    <h1 class="box1" style="font-size: 220%;">Manometer</h1>
+
+<img src="manometer.jpg" alt="error loading image" class="center" >
+<p class="box2"> 
+Enter density of manometer fluid: <br> <input id="p" class="box1"><br><br>
+Enter height of column connected to gas: <br> <input id="h1" class="box1"><br><br>
+Enter height of column connected to atmosphere: <br><input id="h2" class="box1"><br><br>
+Enter atmospheric pressure: <br> <input id="p0" class="box1"><br><br>
+
+
+<button onclick="add()" class="box1" style="font-size: 140%;background-color: black;color: white;">
+    SUBMIT</button><br><br><br>
+Rise of fluid in capillary is: <ggg id="answer" class="box1"></ggg>
+
+<br>
+<br>
+<br>
+</p>
+</body>
+</html>
