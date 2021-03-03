@@ -28,7 +28,7 @@
         <a href="massCons.html">Mass Conservation</a>
         <a href="momentumCons.html">Momentum Conservation</a>
         <a href="Energycons.html">Energy Conservation</a>
-      </div>
+        
     </div> 
   </div>
   <br><br>
@@ -73,6 +73,7 @@
     <li><a href="massCons.html">Mass Conservation</a></li> <br>
     <li><a href="momentumCons.html">Momentum Conservation</a></li> <br>
     <li><a href="Energycons.html">Energy Conservation</a></li> <br>
+    <li><a href="visualisation.html">Visualisation Of Flow</a></li> <br>
     
 </ul>
 
